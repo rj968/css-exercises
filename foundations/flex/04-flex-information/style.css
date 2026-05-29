@@ -1,3 +1,5 @@
+/* improvement: made it too complex. check the given solution to find a simpler approach 
+    specially could have just made text align center in the whole body instead of this spagetti*/
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -23,4 +25,32 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.content {
+  display: flex;
+  gap: 52px;
+  align-items: center;
+}
+
+.plant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 200px;
+}
+.plant.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.text {
+  text-align: center;
 }
